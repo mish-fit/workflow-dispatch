@@ -6144,6 +6144,7 @@ class WorkflowHandler {
                     ref: this.ref,
                     inputs
                 });
+                core.info(JSON.stringify({dispatchResp}, null, 2));
                 debug_1.debug('Workflow Dispatch', dispatchResp);
             }
             catch (error) {
